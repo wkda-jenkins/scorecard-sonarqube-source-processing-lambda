@@ -1,4 +1,4 @@
-# Scorecard SonarQube Source Processing Lambda
+# Scorecard SonarQube Source Processing Lambda (COR-5415)
 
 This AWS Lambda function processes SonarQube code quality metrics for repositories and stores them in the scorecard system for unified metrics tracking.
 
