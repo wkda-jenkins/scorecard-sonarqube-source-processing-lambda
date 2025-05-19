@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <JsonTemplateLayout eventTemplateUri="classpath:EcsLayout.json" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console" />
+        </Root>
+        <Logger name="wkda.api.lambda" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+        <Logger name="com.auto1.core.lambda" level="INFO" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+        <Logger name="com.influxdb.client" level="INFO" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+        <Logger name="okhttp3" level="INFO" additivity="false">
+            <AppenderRef ref="Console" />
+        </Logger>
+    </Loggers>
+</Configuration>

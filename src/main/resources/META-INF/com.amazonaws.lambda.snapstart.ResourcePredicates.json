@@ -1,0 +1,16 @@
+{
+  "excludeClasses": [
+    "java.net.InetAddress",
+    "java.net.Inet4Address",
+    "java.net.Inet6Address",
+    "java.net.NetworkInterface",
+    "java.security.SecureRandom"
+  ],
+  "excludeResources": [
+    "file:/tmp/.*",
+    "file:/proc/.*",
+    "file:/sys/.*",
+    "file:/dev/.*",
+    "file:/var/.*"
+  ]
+}
